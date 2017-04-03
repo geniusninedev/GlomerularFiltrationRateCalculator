@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Serum Creatinine(Scr):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCreatinine"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextCreatine"
+            android:layout_weight="0.18" />
+
+        <Spinner
+            android:layout_width="115dp"
+            android:layout_height="41dp"
+            android:id="@+id/spinnerCreatinine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Age:"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAge"
+            android:textSize="18dp"
+            android:layout_weight="0.15" />
+
+        <EditText
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextAge" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+
+            android:text="Gender:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGender"
+            android:textSize="18dp"
+            android:layout_weight="0.15" />
+        <Spinner
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerGender" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <Button
+            android:text="Calculate"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalculate"
+            android:textSize="20dp"
+            android:layout_weight="0.15" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:text="Clear"
+            android:textSize="20dp"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textResult"
+            android:textSize="16dp"
+            android:layout_weight="0.83" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textQuadratic"
+            android:textSize="16dp"
+            android:layout_weight="8.35" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
